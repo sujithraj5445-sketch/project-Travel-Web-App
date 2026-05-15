@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Web</title>
+<!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/1257/1257385.png">
+<!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Trirong">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <!-- navigation -->
+      <nav class="navbar">
+  
+        <h1 class="logo">ADVENTURE</h1>
+        <div class="menu-toggle" id="menu-toggle">
+          ☰
+        </div>
+  
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#feature">FEATURES</a></li>
+          <li><a href="#destinations">DESTINATIONS</a></li>
+          <li class="ctn"><a href="#contact">CONTACT</a></li>
+        </ul>
+  
+      </nav>
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+
+
+      </script>
+  
+      <!-- Hero section -->
+      <div class="header-content" id="home">
+        <h1>Discover Your Next Adventure</h1>
+        <h2>Travel Beyond Boundaries</h2>
+        <p>Explore breathtaking destinations, book unforgettable trips,and create memories that last forever</p>
+        <a href="#destinations" class="hero-btn">Explore Destinations</a>
+  
+      </div>
+    </header>
+  
+  <!-- about -->
+    <section class="bg-light py-5">
+  
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 py-5">
+            <h1 class="title">About Us</h1>
+            <p class="text">
+              We believe travel is more than reaching a destination-it'sabout the moments you collect along the
+              way.Whether your're seeking adventure,relaxation,or cultural immersion,we desing journeys around what
+              truly matter to you.
+              With expert planning trusted global partners,and a passion forexploration.We make travel effortless,
+              insparing and unforgettable
+            </p>
+            <div class="row text-center">
+  
+              <div class="col-12 col-md-6 col-lg-3 ">
+  
+                <h5 class="type" style="color: rgb(190, 148, 22);">10000+</h5>
+                <p>Happy travelers</p>
+              </div>
+  
+              <div class="col-12 col-md-6 col-lg-3">
+  
+                <h5 class="type" style="color: rgb(190, 148, 22);"> 3+</h5>
+                <p>Years of experience</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="type" style="color: rgb(190, 148, 22);">4.8/5</h5>
+                <p>Overall rating</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="type" style="color: rgb(190, 148, 22);">99%</h5>
+                <p>Satisfication rate</p>
+              </div>
+            </div>
+            <div class=" p-5 text-center"><a href="#destinations" class="btn btn-primary"> See More</a></div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 about-img  ">
+            <img class="card-img-top  img-fluid " src="images/charlotte-noelle-98WPMlTl5xo-unsplash.jpg" alt="about image">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- gallery -->
+  
+    <section class="fs-5  text-center py-4 fw-medium g-3">
+      <div class="container py-5 g-3">
+        <p class="lead">Our Gallery</p>
+        <h2>Best Traveler Share Photos</h2>
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  
+          <div class="carousel-inner">
+  
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row g-5">
+  
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/1.jpg" class="card-img-top" alt="Taj Mahal">
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/2.jpg" class="card-img-top" alt="gallery img ">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/99.jpg" class="card-img-top" alt="gallery img">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/4.jpg" class="card-img-top" alt="gallery img">
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row g-3">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/5 (1).jpg" class="card-img-top" alt="gallery img">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/77.jpg" class="card-img-top" alt="gallery img">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/88.jpg" class="card-img-top" alt="gallery img">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/10.jpg" class="card-img-top" alt="gallery img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+  
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+  
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+  
+            <span class="carousel-control-next-icon"></span>
+          </button>
+  
+        </div>
+  
+      </div>
+  
+    </section>
+  
+  
+  
+    <!-- feature section -->
+    <section class="  fs-5  text-center py-4 fw-medium g-3" id="feature">
+      <div class="container py-5 g-3">
+        <h2>Top Values for you</h2>
+        <p class="lead">Travel planning,made beautifully simple</p>
+  
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 ">
+            <div class="border rounded">
+              <i class="fa-solid fa-shield-heart fs-1"></i>
+              <h3>Safe travel</h3>
+              <p class="lead g-3">We prioritize your safety and comfort throunghout every journ</p>
+            </div>
+  
+          </div>
+  
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="border rounded">
+              <i class="fa-solid fa-book-open  fs-1"></i>
+              <h3>Expert Local Guides</h3>
+              <p class="lead">Travel with certified guides who know the land inside-out</p>
+            </div>
+  
+          </div>
+  
+  
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="border rounded">
+              <i class="fa-solid fa-hands-holding fs-1"></i>
+              <h3>Seasonal Offers</h3>
+              <p class="lead">Get notified about flash deals and last-minute discounts</p>
+            </div>
+  
+          </div>
+  
+  
+          <div class="col-12 col-md-6 col-lg-3 ">
+            <div class="border rounded">
+              <i class="fa-solid fa-bookmark fs-1"></i>
+              <h3>Save Your Yourneys</h3>
+              <p class="lead">All your booking details in one place.Revist, refine,abd share anytime</p>
+            </div>
+          </div>
+          <div><a href="#contact" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+  
+  
+  
+    <!-- destinations -->
+  
+    <section class="  fs-5  text-center py-4 fw-medium g-3" id="destinations">
+      <div class="container py-5 g-3">
+        <h2>Popular Destinations</h2>
+        <p class="lead">Explore trending destination love by travelers worldwide.</p>
+  
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  
+          <div class="carousel-inner">
+  
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row g-1">
+  
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/Taj-Mahal-grounds.jpg" class="card-img-top"
+                        alt="Taj Mahal travel destination India">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Taj Mahal</h5>
+                        <p class="text-muted small">
+                          12 Oct - 19 Oct | 7 Days
+                        </p>
+                        <p class="card-text description">
+                          Taj Mahal is undoubtedly one of the most visited and photographed monuments in the world.
+                          Being an iconic symbol of eternal love and India’s most celebrated landmark, it is an
+                          attraction that most people long to see at least once in their lifetime.
+                        </p>
+                        <div class="mt-auto">
+                          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <span class="price">
+                              ₹15k
+                            </span>
+                            <button class="btn btn-flight ">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/download.jpg" class="card-img-top" alt="Bali">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Bali</h5>
+                        <p class="text-muted small">1 Dec - 10 Dec | 10 Days
+                        </p>
+                        <p class="card-text description">
+                          It is a place where harmony emerges from diversity. The island offers destinations and
+                          experiences as varied as its visitors, which can make travel planning extremely challenging if
+                          you come to Bali for the first time.
+                        </p>
+                        <div class="mt-auto">
+                          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <span class="price">
+                              ₹40k
+                            </span>
+                            <button class="btn btn-flight">Book Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/london.avif" class="card-img-top" alt="London city view">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>London</h5>
+                        <p class="text-muted small">
+                          10 Nov - 19 Oct | 9 Days
+                        </p>
+                        <p class="card-text description">
+                          From world-class musicals to top attractions, one-of-a-kind tours and family fun, discover
+                          plenty of amazing things to do and places to see in London
+                        </p>
+                        <div class="mt-auto">
+                          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <span class="price">
+                              ₹45k
+                            </span>
+                            <button class="btn btn-flight">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row g-1">
+  
+  
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/maldivs.webp" class="card-img-top" alt="Bali">
+                      <div class="card-body d-flex flex-column">
+  
+                        <h5 class="card-title"> <i class="fa-solid fa-location-dot"></i>Maldives </h5>
+                        <p class="text-muted small">12 dec - 19 dec | 7 Days
+                        </p>
+                        <p class="card-text description">
+                          Home to sun-kissed beaches, swaying palms, sculpted coral reefs, luxury resorts and thrilling
+                          water sports, the tropical paradise called Maldives is a string of beautiful islands.
+                        </p>
+                        <div class="mt-auto">
+                          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <span class="price">
+                              ₹25k
+                            </span>
+                            <button class="btn btn-flight">Book Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/france.avif" alt="France">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>France</h5>
+                        <p class="text-muted small">12 june - 19 june | 7 Days
+                        </p>
+                        <p class="card-text description">
+                          France, officially the French Republic, is a leading Western European nation, renowned as a
+                          global hub for culture, fashion, and cuisine, with over 69 million residents. Paris is the
+                          capital, and the country is the world's top tourist destination
+                        </p>
+                        <div class="mt-auto">
+                          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <span class="price">
+                              ₹50k
+                            </span>
+                            <button class="btn btn-flight">Book Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card deal-card border-0 shadow-sm h-100">
+                      <img src="images/m_Abu Dhabi_3-min_l_667_1000.webp" class="card-img-top" alt="Abu Dhabi">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Abu Dhabi</h5>
+                        <p class="text-muted small">12 Oct - 19 Oct | 7 Days
+                        </p>
+                        <p class="card-text description">
+                          Capital city of the UAE and the most populous after Dubai, Abu Dhabi is also the largest of
+                          the seven emirates and lies on an island in the Pacific Gulf.
+                        </p>
+                        <div class="mt-auto">
+                          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <span class="price">
+                              ₹13,000
+                            </span>
+                            <button class="btn btn-flight">Book Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+  
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+  
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+  
+            <span class="carousel-control-next-icon"></span>
+          </button>
+  
+        </div>
+  
+      </div>
+  
+    </section>
+  
+    <!-- call to action -->
+  
+    <section>
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold fs-2">Why you should choose us</h2>
+        <p class="text-center mb-4 fw-medium ">Your trusted travel companion around the world,made beautifully simple
+        </p>
+      </div>
+      
+    </section>
+  
+  
+    <!-- contact section -->
+  
+    <section class="bg-light py-5 " id="contact">
+      <div class="container bg-">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4  ">
+            <div class="card h-100 border-0 shadow-sm ">
+              <div class="card-body p-4">
+                <h4 class="card-title fw-bold mb-4"><i class="fa-solid fa-headset text-primary"></i> contact information </h4>
+                <!-- contact informatio -->
+                 
+  
+                <div class="emial">
+                  <i class="fa-sharp fa-solid fa-envelope"></i>
+                  <p><b>Email :</b>trip@advisor.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="fa-sharp fa-solid fa-phone"></i>
+                  <p><b>Phone :</b> +91 8921380254</p>
+                </div>
+  
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p><b>Location :</b> Kerala, India</p>
+                </div>
+  
+  
+              </div>
+            </div>
+          </div>
+  
+          <!-- send enquiry -->
+  
+          <div class="col-sm-12 col-lg-8 ">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h4 class="card-title fw-bold mb-4 text-center ">Contact Us </h4>
+                <form class="row g-3">
+                  <!-- full name -->
+  
+                  <div class=" fw-medium">
+                    <label for="fname ">Full Name</label>
+                    <input type="text" class="form-control border border-dark" id="fname" required
+                      placeholder="Your name">
+                  </div>
+                  <!-- email -->
+  
+                  <div class="col-md-6  fw-medium ">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control border border-dark" placeholder="Your email" id="email"
+                      required>
+                  </div>
+                  <!-- contact no -->
+  
+                  <div class="col-md-6 fw-medium ">
+                    <label for="contact-no">Contact No</label>
+                    <input type="tel" inputmode="numeric" pattern="[0-9]{10}" class="form-control border border-dark"
+                      placeholder="Your contact no" id="contact-no" required>
+                  </div>
+  
+                  <!-- message -->
+  
+                  <div class="col-12 fw-medium">
+                    <label for="inputmessage" class="form-label ">Message</label>
+                    <textarea class="form-control border border-dark" placeholder="Message" id="message" required rows="5"
+                      minlength="5" maxlength="50"></textarea>
+                  </div>
+                  <!-- submit button -->
+  
+                  <div class="col-12 text-center">
+                    <button class="btn btn-primary " type="submit ">Send Message <i
+                        class="fa-solid fa-location-arrow"></i></button>
+  
+                  </div>
+  
+                </form>
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+    </section>
+  
+  
+    <section>
+      <footer class="bg-black text-white py-4">
+        <div class="container">
+          <div class="row align-items-start text-center text-md-start">
+  
+            <!-- Logo -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0 text-center">
+              <img src="images/logo.webp" alt="Adventure Logo" class="img-fluid footer-logo">
+            </div>
+  
+            <!-- Quick Links -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+  
+              <h5 class="mb-3">Quick Help</h5>
+  
+              <div class="footer-links">
+                <p>FAQ</p>
+                <p>BOOK NOW</p>
+                <p>Privacy Policy</p>
+              </div>
+  
+              <p class="mt-4 mb-0">
+                © 2026 tripadvisor. All rights reserved.
+              </p>
+  
+            </div>
+  
+            <!-- Social Icons -->
+            <div class="col-12 col-md-4">
+  
+              <h5 class="mb-3">Follow Us</h5>
+  
+              <div class="social-links">
+  
+                <a href="#" class="social-icon">
+                  <i class="fa-brands fa-square-instagram"></i>
+                  Instagram
+                </a>
+  
+                <a href="#" class="social-icon">
+                  <i class="fa-brands fa-facebook"></i>
+                  Facebook
+                </a>
+  
+                <a href="#" class="social-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                  YouTube
+                </a>
+  
+                <a href="#" class="social-icon">
+                  <i class="fa-brands fa-square-twitter"></i>
+                  Twitter
+                </a>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </footer>
+  
+    </section>
+  
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
